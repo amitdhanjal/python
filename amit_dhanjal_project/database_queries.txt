@@ -1,0 +1,14 @@
+#create database
+CREATE DATABASE employee;
+
+
+#create User
+CREATE USER 'amit'@'localhost' IDENTIFIED BY 'password';
+
+#grant all piveleges to amit
+GRANT ALL PRIVILEGES ON * . * TO 'amit'@'localhost';
+
+#save changes to database
+FLUSH PRIVILEGES;
+
+
